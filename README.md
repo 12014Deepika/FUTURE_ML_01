@@ -37,7 +37,7 @@ Note: The dataset file is large, so GitHub may not display a preview directly in
 
 ### Superstore Sales Dataset Graph
 
-![Dataset Graph](Superstore Sales Dataset graph.png)
+![Dataset Graph](superstore_sales_dataset_graph.png)
 
 
 ## Forecast Explanation
