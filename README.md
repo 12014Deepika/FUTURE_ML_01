@@ -53,6 +53,7 @@ This project was built for a retail business that wants to predict future sales 
 The forecasting system helps store managers and business owners analyze sales trends, estimate future demand, and make better decisions regarding inventory management, staffing, budgeting, and business planning.
 
 By forecasting future sales, the business can reduce stock shortages, avoid overstocking, and improve overall operational efficiency.
+*Built for a retail store business to forecast future sales and support inventory, budgeting, and operational planning.
 
 
 
