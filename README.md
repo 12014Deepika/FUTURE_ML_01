@@ -21,11 +21,23 @@ A Machine Learning-based Sales Forecasting Dashboard built using Streamlit and P
 
 ## Dataset Used
 
-## Dataset Used
-
 [Superstore Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
 Note: The dataset file is large, so GitHub may not display a preview directly in the repository.
+
+## Project Screenshots
+
+### Dashboard
+
+![Dashboard](dashboard.png)
+
+### Sales Forecast
+
+![Sales Forecast](superstore_forecast.png)
+
+### Superstore Sales Dataset Graph
+
+![Dataset Graph](Superstore Sales Dataset graph.png)
 
 
 ## Forecast Explanation
