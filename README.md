@@ -7,8 +7,8 @@ A Machine Learning-based Sales Forecasting Dashboard built using Streamlit and P
 * Sales Forecasting
 * Business Analytics Dashboard
 * CSV Upload
-* Forecast Graphs
-* AI Predictions
+* Forecast Visualizations
+* Future Sales Predictions
 
 ## Technologies Used
 
@@ -18,17 +18,12 @@ A Machine Learning-based Sales Forecasting Dashboard built using Streamlit and P
 * NumPy
 * Matplotlib
 * Scikit-learn
-  
+
 ## Dataset Used
 
-[Superstore Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+Superstore Sales Dataset (Kaggle)
 
-Note:
-The dataset file is large, so GitHub may not display a preview directly in the repository.
-
-
-Note:
-The dataset file is large, so GitHub may not display a preview directly in the repository.
+Note: The dataset file is large, so GitHub may not display a preview directly in the repository.
 
 ## Forecast Explanation
 
@@ -53,7 +48,8 @@ This project was built for a retail business that wants to predict future sales 
 The forecasting system helps store managers and business owners analyze sales trends, estimate future demand, and make better decisions regarding inventory management, staffing, budgeting, and business planning.
 
 By forecasting future sales, the business can reduce stock shortages, avoid overstocking, and improve overall operational efficiency.
-*Built for a retail store business to forecast future sales and support inventory, budgeting, and operational planning.
+
+
 
 
 
