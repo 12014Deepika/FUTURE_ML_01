@@ -191,6 +191,14 @@ st.sidebar.button("📈 Sales Trends")
 st.sidebar.button("📊 Forecast Results")
 st.sidebar.button("📁 Upload Dataset")
 st.sidebar.button("💡 Business Insights")
+st.sidebar.markdown("---")
+st.sidebar.subheader("## BUSINESS VALUES")
+
+st.sidebar.button("📦 Inventory Planning")
+st.sidebar.button("📈 Demand Management")
+st.sidebar.button("💰 Financial Planning")
+st.sidebar.button("👥 Resource Allocation")
+st.sidebar.button("🎯 Strategic Decisions")
 
 # =========================
 # TITLE
@@ -199,24 +207,7 @@ st.sidebar.button("💡 Business Insights")
 st.title("📈 Sales & Demand Forecasting Dashboard")
 # =========================
 # TITLE
-# =========================
-
-st.markdown("""
-<div style="
-background:white;
-padding:20px;
-border-radius:16px;
-border:1px solid #E5E7EB;
-margin-bottom:20px;
-">
-<h3>📊 Business Forecast Dashboard</h3>
-<p>
-Forecast future sales trends using historical business data
-to support inventory planning, budgeting, and decision-making.
-</p>
-</div>
-""", unsafe_allow_html=True)
-
+# ========================
 # =========================
 # FILE UPLOADER
 # =========================
@@ -230,32 +221,7 @@ uploaded_file = st.file_uploader(
     type=["csv"]
 )
 
-st.markdown("""
-<div style="
-background:#F0FDF4;
-padding:25px;
-border-radius:16px;
-border:1px solid #BBF7D0;
-margin-top:20px;
-margin-bottom:20px;
-">
-<h3 style="text-align:left;color:#166534;">
-📌 Why This Forecast Matters
-</h3>
 
-✅ Inventory Planning<br>
-✅ Demand Management<br>
-✅ Financial Planning<br>
-✅ Resource Allocation<br>
-✅ Strategic Decisions
-
-<br><br>
-
-This dashboard helps businesses forecast future sales,
-manage inventory, plan budgets, and make data-driven decisions.
-
-</div>
-""", unsafe_allow_html=True)
 
 # =========================
 # MAIN APP
