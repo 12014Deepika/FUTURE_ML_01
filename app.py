@@ -71,7 +71,7 @@ st.markdown(
     section[data-testid="stSidebar"] {
 
         background-color: #FFFFFF;
-
+ge 
         border-right: 1px solid #E5E7EB;
 
         min-width: 320px;
@@ -79,15 +79,12 @@ st.markdown(
         max-width: 320px;
     }
 
-    .stFileUploader {
-
+.stFileUploader {
     background-color: white !important;
-
-    padding: 30px !important;
-
+    padding: 35px !important;
     border-radius: 20px !important;
-
-    border: 1px solid #E5E7EB !important;
+    border: 2px dashed #D1D5DB !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .stFileUploader label {
@@ -161,14 +158,19 @@ st.markdown(
         border: 1px solid #E5E7EB;
     }
 
-   .stFileUploader button {
+    .stFileUploader button {
+        color: white !important;
+        background-color: #111827 !important;
+        border-radius: 10px !important;
+        font-weight: 700 !important;
+    [data-testid="stFileUploader"]{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
 
-    color: black !important;
-
-    background-color: #2563EB !important;
-
-    font-weight: 700 !important;
-   }
     </style>
     """,
     unsafe_allow_html=True
@@ -177,28 +179,47 @@ st.markdown(
 # =========================
 # SIDEBAR
 # =========================
-st.sidebar.title("☁️ AI Dashboard")
-
 st.sidebar.markdown("""
-### Smart Forecasting
-
-✔ Sales Analytics  
-🤖 AI Predictions  
-📂 CSV Upload  
-📊 Business Insights  
+# 📈 Sales & Demand
+### Forecasting for Businesses
 """)
+
+st.sidebar.markdown("## NAVIGATION")
+
+st.sidebar.button("🏠 Dashboard")
+st.sidebar.button("📈 Sales Trends")
+st.sidebar.button("📊 Forecast Results")
+st.sidebar.button("📁 Upload Dataset")
+st.sidebar.button("💡 Business Insights")
 
 # =========================
 # TITLE
 # =========================
 
 st.title("📈 Sales & Demand Forecasting Dashboard")
+# =========================
+# TITLE
+# =========================
 
 st.markdown("""
-### 📊 Smart Business Forecasting Dashboard
+<div style="
+background:white;
+padding:20px;
+border-radius:16px;
+border:1px solid #E5E7EB;
+margin-bottom:20px;
+">
+<h3>📊 Business Forecast Dashboard</h3>
+<p>
+Forecast future sales trends using historical business data
+to support inventory planning, budgeting, and decision-making.
+</p>
+</div>
+""", unsafe_allow_html=True)
 
-Predict future sales trends using Artificial Intelligence & Machine Learning.
-""")
+# =========================
+# FILE UPLOADER
+# =========================
 
 # =========================
 # FILE UPLOADER
@@ -208,6 +229,33 @@ uploaded_file = st.file_uploader(
     "Upload Sales CSV File",
     type=["csv"]
 )
+
+st.markdown("""
+<div style="
+background:#F0FDF4;
+padding:25px;
+border-radius:16px;
+border:1px solid #BBF7D0;
+margin-top:20px;
+margin-bottom:20px;
+">
+<h3 style="text-align:left;color:#166534;">
+📌 Why This Forecast Matters
+</h3>
+
+✅ Inventory Planning<br>
+✅ Demand Management<br>
+✅ Financial Planning<br>
+✅ Resource Allocation<br>
+✅ Strategic Decisions
+
+<br><br>
+
+This dashboard helps businesses forecast future sales,
+manage inventory, plan budgets, and make data-driven decisions.
+
+</div>
+""", unsafe_allow_html=True)
 
 # =========================
 # MAIN APP
@@ -340,10 +388,9 @@ if uploaded_file is not None:
         # =========================
         # AI INSIGHT
         # =========================
-
-        st.info(
-            f"📈 AI predicts future sales may grow up to ${predictions[-1]:,.0f}"
-        )
+        st.success(
+    f"📈 Forecast indicates future sales may reach ${predictions[-1]:,.0f}"
+)
 
     except:
 
